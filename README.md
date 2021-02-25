@@ -24,66 +24,6 @@ const md = htmdown.bind(React.createElement);
 
 ## Usage
 
-**React ([CodePen](https://codepen.io/mxmul/pen/PobEEeq?editors=0010)):**
-
-```js
-import { createElement, useState } from "https://cdn.skypack.dev/react";
-import { render } from "https://cdn.skypack.dev/react-dom";
-import htmdown from "https://cdn.skypack.dev/htmdown";
-import htm from "https://cdn.skypack.dev/htm";
-
-const md = htmdown.bind(createElement);
-const html = htm.bind(createElement);
-
-function Counter() {
-  const [count, setCount] = useState(0);
-  return html`<button onClick=${() => setCount(count + 1)}>${count}</button>`;
-}
-
-render(
-  md`
-    # h1
-
-    ## h2
-
-    _hello_ **world**
-
-    ${html`<${Counter} />`}
-
-    ^ that was a React component!
-`,
-  document.body
-);
-```
-
-**Preact ([CodePen](https://codepen.io/mxmul/pen/LYbeemq?editors=0010)):**
-
-```js
-import { h, render } from "https://cdn.skypack.dev/preact";
-import { useState } from "https://cdn.skypack.dev/preact/hooks";
-import htmdown from "https://cdn.skypack.dev/htmdown";
-import htm from "https://cdn.skypack.dev/htm";
-
-const md = htmdown.bind(h);
-const html = htm.bind(h);
-
-function Counter() {
-  const [count, setCount] = useState(0);
-  return html`<button onClick=${() => setCount(count + 1)}>${count}</button>`;
-}
-
-render(
-  md`
-    # h1
-
-    ## h2
-
-    _hello_ **world**
-
-    ${html`<${Counter} />`}
-
-    ^ that was a Preact component!
-`,
-  document.body
-);
-```
+- [React + JSX](https://codepen.io/mxmul/pen/JjbMMZe?editors=0010)
+- [React + htm](https://codepen.io/mxmul/pen/PobEEeq?editors=0010)
+- [Preact + htm](https://codepen.io/mxmul/pen/LYbeemq?editors=0010)
