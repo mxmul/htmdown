@@ -24,7 +24,7 @@ const md = htmdown.bind(React.createElement);
 
 ## Usage
 
-**React:**
+**React ([CodePen](https://codepen.io/mxmul/pen/PobEEeq?editors=0010)):**
 
 ```js
 import { createElement, useState } from "https://cdn.skypack.dev/react";
@@ -56,7 +56,7 @@ render(
 );
 ```
 
-**Preact:**
+**Preact ([CodePen](https://codepen.io/mxmul/pen/LYbeemq?editors=0010)):**
 
 ```js
 import { h, render } from "https://cdn.skypack.dev/preact";
