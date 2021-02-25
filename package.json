@@ -1,0 +1,46 @@
+{
+  "name": "htmdown",
+  "version": "0.0.3",
+  "scripts": {
+    "build": "tsup ./src/htmdown.ts --dts --format cjs,esm"
+  },
+  "main": "./dist/htmdown.js",
+  "module": "./dist/htmdown.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/htmdown.js",
+      "import": "./dist/htmdown.mjs"
+    }
+  },
+  "types": "./dist/htmdown.d.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/marked": "^1.2.2",
+    "htm": "^3.0.4",
+    "prettier": "^2.2.1",
+    "tsup": "^4.3.1"
+  },
+  "peerDependencies": {
+    "htm": "*"
+  },
+  "dependencies": {
+    "marked": "^2.0.0",
+    "strip-indent": "^3.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxmul/htmdown"
+  },
+  "keywords": [
+    "markdown",
+    "md",
+    "mdx",
+    "jsx",
+    "htm",
+    "react",
+    "preact"
+  ]
+}
