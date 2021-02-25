@@ -24,6 +24,23 @@ const md = htmdown.bind(React.createElement);
 
 ## Usage
 
+```js
+render(
+  md`
+    # h1
+
+    ## h2
+
+    _hello_ **world**
+
+    ${reactNode}
+
+    ^ that was a React component!
+`,
+  document.body
+);
+```
+
 - [React + JSX](https://codepen.io/mxmul/pen/JjbMMZe?editors=0010)
 - [React + htm](https://codepen.io/mxmul/pen/PobEEeq?editors=0010)
 - [Preact + htm](https://codepen.io/mxmul/pen/LYbeemq?editors=0010)
