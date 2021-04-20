@@ -2,7 +2,7 @@
 
 [![npm version](https://badgen.net/npm/v/htmdown)](https://npm.im/htmdown)
 
-`htmdown` is MDX-like syntax in plain JavaScript, without a transpiler.
+`htmdown` is MDX-like syntax in plain JavaScript, without a build step.
 
 It's built on top of [htm](https://github.com/developit/htm) and uses [Tagged Template](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates) literals.
 
